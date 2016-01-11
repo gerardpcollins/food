@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Sign Up</title>
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Varela+Round' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="application/javascript" src="jquery.min.js"></script>
+        <script>
+			$(document).ready(function(){
+				$(document).on('click', '.email', function (){
+					this.value = '';
+				});
+			});
+		</script>
+    </head>
+    
+    <body>
+    	<header>
+        	<div class="statusBar">
+            	<div align="right">12:30</div>
+                <div class="battery"></div>
+                <div class="batteryTop"></div>
+                <div class="antenna1"></div>
+                <div class="antenna2"></div>
+                <div class="antenna3"></div>
+                <div class="antenna4"></div>
+            </div>
+        </header>
+       	<div class="main">
+            <section>
+	            <br />
+                <h3 align="center">Create Account</h3>
+                
+                <div style="opacity:0.6">
+                    <h3 align="center">
+                    	<input type="text" value="First Name" style="width:15em" /><br /><br />
+                        <input type="text" value="Last Name" style="width:15em" /><br /><br />
+                        <input type="text" value="Email" style="width:15em" /><br /><br />
+                        <input type="text" value="Password" style="width:15em" /><br />
+                    </h3>
+                </div>
+                <h3 align="center">
+                    <a href="index.html"><input type="button" class="signUp" value="Submit" /></a>
+                </h3>
+                <div class="clear"></div>
+                <p align="center">Already have an account? <a href="index.html">Sign In</a></p>
+            </section>
+        </div>
+        <footer>
+            <div class="bottomNav" onClick="window.history.back();">
+                <p align="center">
+                    <div class="triangle"><div></div></div>
+                </p>
+            </div>
+        
+            <div class="bottomNav">
+                <p align="center"><div class="circle"></div></p>
+            </div>
+            
+            <div class="bottomNav">
+                <p align="center"><div class="square"></div></p>
+            </div>
+        </footer>
+    </body>
+</html>
