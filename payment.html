@@ -10,9 +10,22 @@
         <script type="application/javascript" src="jquery.min.js"></script>
         <script>
 			$(document).ready(function(){
-				$(document).on('click', '.email', function (){
-					this.value = '';
-				});
+				var html = '';
+				for(i=1;i<13;i++){
+					if(i<10){
+						html+= '<option>0'+i+'</option>';
+						$('#month').html(html);
+					}else{
+						html+= '<option>'+i+'</option>';
+						$('#month').html(html);
+					}
+				}
+				
+				html = '';
+				for(i=16;i<26;i++){
+					html+= '<option>20'+i+'</option>';
+					$('#year').html(html);
+				}
 			});
 		</script>
     </head>
@@ -32,34 +45,34 @@
        	<div class="main">
             <section>
 	            <br />
-                <h3 align="center">Create Account</h3>
+                <h3 align="center">Payment Information</h3>
                 
                 <div style="opacity:0.6">
                     <h3 align="center">
-                    	<input type="text" value="First Name" style="width:15em" /><br /><br />
-                        <input type="text" value="Last Name" style="width:15em" /><br /><br />
-                        <input type="text" value="Email" style="width:15em" /><br /><br />
-                        <input type="text" value="Password" style="width:15em" /><br />
+                    	<input type="text" value="Name on Card" style="width:15em" /><br /><br />
+                        <input type="text" value="Card Number" style="width:15em" />
                     </h3>
+                    <h5 align="center">
+						Month&nbsp;&nbsp;<select id="month"></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                        Year&nbsp;&nbsp;<select id="year"></select>
+                    </h5>
                 </div>
                 <h3 align="center">
-                    <a href="payment.html"><input type="button" class="signUp" value="Submit" /></a>
+                    <a href="index.html"><input type="button" class="signUp" value="Submit" /></a>
                 </h3>
-                <div class="clear"></div>
-                <p align="center">Already have an account? <a href="index.html">Sign In</a></p>
             </section>
         </div>
         <footer>
-            <div class="bottomNav" onClick="window.history.back();">
-                <p align="center">
-                    <div class="triangle"><div></div></div>
-                </p>
-            </div>
-        
+            <a href="hero.html">
+                <div class="bottomNav">
+                    <p align="center">
+                        <div class="triangle"><div></div></div>
+                    </p>
+                </div>
+            </a>
             <div class="bottomNav">
                 <p align="center"><div class="circle"></div></p>
             </div>
-            
             <div class="bottomNav">
                 <p align="center"><div class="square"></div></p>
             </div>
