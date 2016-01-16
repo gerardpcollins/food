@@ -1,12 +1,12 @@
-html, body{overflow-x: hidden;width:300px;}
+html, body{overflow-x: hidden ;margin:0px; padding:0px}
 body{font-family: "Lato", Helvetica, Arial, sans-serif;	overflow:hidden;}
 h1, h2, h3, h4, h5, h6{font-family: "Varela Round", Helvetica, Arial, sans-serif;}
 h2{font-size:28px;font-weight: normal;margin-bottom: 5px;}
 p{font-size:16px;line-height: 19px;font-weight: 100;}
+a{text-decoration:none}
 button:hover{cursor:pointer;}
 hr{float:left; margin-left:0.5em; margin-right:0.5em; width:40%;}
 .main{
-	min-height:27em;
 	background: cyan; /* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(bottom, gray, cyan); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(bottom, gray, cyan); /* For Opera 11.1 to 12.0 */
@@ -21,23 +21,22 @@ hr{float:left; margin-left:0.5em; margin-right:0.5em; width:40%;}
 /* HEADER */
 header{height:1.5em;color:white;background-color:black;opacity:0.6;margin:0px;}
 .statusBar{padding-right:0.5em;	padding-top:0.3em;font-size:14px;}
-.battery{height:1em;width:0.6em;margin-left:17.5em;margin-top:-1em;background-color:white;}
+.battery{height:1em;width:0.6em;margin-top:-1em;background-color:white;}
 .batteryTop{height:.4em;width:0.3em;margin-left:17.65em;margin-top:-1.2em;background-color:white;color:red;}
 .antenna1, .antenna2, .antenna3, .antenna4{background-color:white;}
-.antenna1{width:0.2em;height:1.2em;margin-left:16.8em;margin-top:-0.4em;}
-.antenna2{height:1em;width:0.25em;margin-left:16.4em;margin-top:-1em;}
-.antenna3{width:0.2em;height:0.7em;margin-left:16.1em;margin-top:-0.7em;}
-.antenna4{width:0.2em;height:0.3em;margin-left:15.7em;margin-top:-0.3em;}
+.antenna1{width:0.2em;height:1.2em;margin-top:-0.4em;}
+.antenna2{height:1em;width:0.25em;margin-top:-1em;}
+.antenna3{width:0.2em;height:0.7em;margin-top:-0.7em;}
+.antenna4{width:0.2em;height:0.3em;margin-top:-0.3em;}
 section{margin-top:-1.5em;overflow:hidden;}
 
 /* FOOTER */
-footer{background-color: black;	color: #FFFFFF;	position: relative;	overflow: hidden;height:3em;margin-top:-0.1em;}
+footer{background-color: black;	color: #FFFFFF;	position: relative;	overflow: hidden;height:3em;}
 .bottomNav{width:32.5%;float:left;height:3em;}
-.square{border:solid 3px white;height:0.7em;width:0.7em;margin-top:0.9em;margin-left:2.5em;}
-.circle {width: 0.8em;height: 0.8em;border-radius: 50%;border:solid 3px white;margin-top:0.8em;margin-left:2.2em;}
+.square{border:solid 3px white;height:0.7em;width:0.7em;margin-top:-0.15em;}
+.circle {width: 0.8em;height: 0.8em;border-radius: 50%;border:solid 3px white;margin-top:-0.15em;}
 .clear{clear:both}
 .triangle:hover{cursor:pointer;}
-.triangle {margin-left:0em;margin-top:1.5em;margin-left:2.2em;}
 .triangle>div { /*bottom*/
 	width: 15px;
 	height: 3px;
@@ -84,3 +83,52 @@ footer{background-color: black;	color: #FFFFFF;	position: relative;	overflow: hi
 .signUp{width:15.2em; color:white; background-color:black; border:none; padding:0.3em; border-radius:3%;}
 .signUp,.signIn:hover{cursor:pointer}
 .signIn{width:4em; background-color:transparent; color:white; border:solid 1px white; padding:0.3em; border-radius:3%;}
+.hamburger{width:1.3em; height:1.3em; background-color:transparent; position:absolute; top:1.8em; left:0.3em; z-index:1}
+.hamburger hr{margin:1px; width:100%; height:0.25em; background-color:black; opacity:0.6}
+.hamburger:hover{cursor:pointer;}
+.leftMenu{width:5em; height:20em; background-color:white; position:absolute; top:1.8em; display:none; z-index:0}
+
+@media screen and (min-width: 300px){
+	.main{min-height:27em;}
+	.battery{margin-left:18.5em;}
+	.batteryTop{margin-left:18.65em;}
+	.antenna1{margin-left:17.8em;}
+	.antenna2{margin-left:17.4em;}
+	.antenna3{margin-left:17.1em;}
+	.antenna4{margin-left:16.7em;}
+	.triangle {margin-top:1.5em;margin-left:2.8em;}
+	.circle {margin-left:2.5em;}
+	.square{margin-left:2.5em;}
+	.map{min-height:27em;}
+}
+
+@media screen and (min-width: 360px){
+	.main{min-height:37em;}
+	.battery{margin-left:21.5em;}
+	.batteryTop{margin-left:21.65em;}
+	.antenna1{margin-left:20.8em;}
+	.antenna2{margin-left:20.4em;}
+	.antenna3{margin-left:20.1em;}
+	.antenna4{margin-left:19.7em;}
+	.heroPic{height:200px; margin-top:3em}
+	.triangle {margin-top:1.5em;margin-left:3.1em;}
+	.circle {margin-left:2.8em;}
+	.square{margin-left:2.8em;}
+	.map{min-height:37em;}
+	.pageTitle{width:92%}
+}
+
+@media screen and (min-width: 700px){
+	.main{min-height:61em;}
+	.battery{margin-left:50.5em;}
+	.batteryTop{margin-left:50.65em;}
+	.antenna1{margin-left:49.8em;}
+	.antenna2{margin-left:49.4em;}
+	.antenna3{margin-left:49.1em;}
+	.antenna4{margin-left:48.7em;}
+	.heroPic{height:300px; margin-top:10em}
+	.triangle {margin-top:1.5em;margin-left:6.8em;}
+	.circle {margin-left:6.5em;}
+	.square{margin-left:6.5em;}
+	.map{min-height:61em;}
+}

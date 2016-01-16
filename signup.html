@@ -10,7 +10,7 @@
         <script type="application/javascript" src="jquery.min.js"></script>
         <script>
 			$(document).ready(function(){
-				$(document).on('click', '.email', function (){
+				$(document).on('click', '.login', function (){
 					this.value = '';
 				});
 			});
@@ -32,7 +32,8 @@
        	<div class="main">
             <section>
 	            <br />
-                <h3 align="center">Sign Up</h3>
+                <a href="hero.html" style="float:left; margin-top:0.7em"><img height="35px" src="logo.gif" /></a>
+                <h3 align="center" style="width:90%" class="pageTitle">Sign Up</h3>
                 <a href="index.html">
                     <div class="signInButton">
                         <i class="fa fa-twitter"></i> Twitter
@@ -51,23 +52,26 @@
                     <div class="clear"></div>
                     
                     <h3 align="center">
-                        <input type="text" value="Email" style="width:15em" /><br /><br />
-                        <input type="text" value="Password" style="width:15em" /><br />
+                        <input type="text" value="Email" class="login" style="width:15em" /><br /><br />
+                        <input type="text" value="Password" class="login" style="width:15em" /><br />
                     </h3>
                 </div>
                 <h3 align="center">
                     <a href="createAccount.html"><input type="button" class="signUp" value="Sign Up" /></a>
                 </h3>
                 <div class="clear"></div>
-                <p align="center">Already have an account? <a href="index.html">Sign In</a></p>
+                <br />
+                <p align="center">Already have an account? <a href="index.html"><strong>Sign In</strong></a></p>
             </section>
         </div>
         <footer>
-            <div class="bottomNav" onClick="window.history.back();">
-                <p align="center">
-                    <div class="triangle"><div></div></div>
-                </p>
-            </div>
+            <a href="hero.html">
+                <div class="bottomNav">
+                    <p align="center">
+                        <div class="triangle"><div></div></div>
+                    </p>
+                </div>
+            </a>
         
             <div class="bottomNav">
                 <p align="center"><div class="circle"></div></p>
